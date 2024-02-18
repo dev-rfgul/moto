@@ -1,0 +1,392 @@
+:root {
+  --color-1: #ff5f6d;
+  --font-size-btn: 20px;
+  --font-size-heading: 60px;
+  --font-size-para: 14px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: black;
+  color: white;
+  height: 10vh;
+  background: rgb(255, 95, 109);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 95, 109, 1) 0%,
+    rgba(255, 167, 112, 1) 100%
+  );
+  gap: 20px;
+  /* position: fixed; */
+}
+.logo {
+  height: 10vh;
+  width: 100vw;
+  margin-left: 120px;
+}
+.logo img {
+  height: 70%;
+  width: auto;
+  margin-top: 10px;
+}
+.nav-list {
+  display: flex;
+
+  width: 40%;
+  gap: 20px;
+}
+/* btns of navbar */
+.btn {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: var(--font-size-btn);
+  font-weight: 500;
+}
+
+.btn:hover {
+  color: pink;
+}
+.btn button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: var(--font-size-btn);
+  font-weight: 500;
+}
+
+/* diff btn of navbar */
+#btn {
+  border: 1px solid white;
+  padding: 3px 2px;
+  border-radius: 5px;
+  height: 30px;
+  width: 90px;
+  /* margin-left: 10px; */
+  margin-right: 150px;
+}
+#btn:hover {
+  background-color: var(--color-1);
+  color: white;
+}
+/* button of the main / 1st section */
+
+.button {
+  border: 1px solid white;
+  padding: 3px 2px;
+  border-radius: 5px;
+  height: 30px;
+  width: 90px;
+  margin-left: 10px;
+  background-color: var(--color-1);
+}
+
+/* desiging of the 1st container starts from here */
+
+.first-container {
+  width: 100vw;
+  height: 89vh;
+  object-fit: cover;
+  overflow: hidden;
+  background-image: url(images/9.png);
+  display: flex;
+  align-items: center;
+}
+.img-first-container img {
+  margin-left: 120px;
+  width: 910px;
+  height: 970px;
+}
+.text h1 {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+}
+
+.text p {
+  font-size: var(--font-size-para);
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text button {
+  border: 1px solid white;
+  /* padding: 3px 2px; */
+  border-radius: 5px;
+  height: 50px;
+  width: 190px;
+  margin-left: 10px;
+  background-color: var(--color-1);
+  color: white;
+  font-size: var(--font-size-btn);
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+/* desiging of second conntainer starts from here */
+
+.second-container {
+  width: 100vw;
+  height: 90;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  column-count: 3;
+}
+.card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card {
+  margin-top: 20px;
+
+  margin: 100px 100px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.data {
+  display: flex;
+  column-count: 2;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.15);
+  transition: all 0.3s ease;
+}
+
+/* designing of third container */
+
+.third-container {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+.text {
+  width: 700px;
+}
+.text {
+  width: 550px;
+}
+.data h1 {
+  color: black;
+}
+.data p {
+  color: black;
+  font-size: var(--font-size-para);
+}
+
+/* designing of fourth container starts form here */
+
+.container {
+  /* height: 100vh; */
+  width: 100vw;
+  overflow: hidden;
+  /* background-color: yellow; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  /* background-color: #ff5f6d; */
+}
+.features-para {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: var(--font-size-para);
+}
+.features h1 {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: black;
+}
+
+.features p {
+  font-size: var(--font-size-para);
+  color: black;
+  /* margin-left: 10px; */
+}
+
+.feature-cards {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 20px;
+  height: 300px;
+  width: 1000px;
+  /* margin-left: 100px; */
+  margin-top: 50px;
+}
+.feature-card {
+  /* margin-left: 10px; */
+  background-color: white;
+  font-size: var(--font-size-para);
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  /* transition: all 0.3s ease; */
+  /* margin-left: 10px; */
+}
+.feature-cards p {
+  /* color: black; */
+  font-size: var(--font-size-para);
+  margin-left: 10px;
+  align-items: center;
+}
+.feature-card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  background-color: var(--color-1);
+  color: white;
+}
+
+.feature-card i {
+  font-size: 40px;
+  color: var(--color-1);
+  border: 1px solid var(--color-1);
+  border-radius: 50%; /* Make it a circle */
+  display: inline-block; /* Ensures the border doesn't expand */
+  width: 80px; /* Set the width and height of the icon container */
+  height: 80px;
+  text-align: center; /* Center the icon horizontally and vertically */
+  line-height: 80px;
+}
+
+.feature-card:hover i {
+  color: white;
+}
+
+/* styling of sixth container starts from here */
+
+.sixth-container {
+  width: 100vw;
+  height: 90vh;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  background-image: url(images/1.png);
+  /* row-gap: px; */
+  column-gap: 120px;
+}
+.list ol {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  font-weight: bold;
+}
+
+.eighth-container .features {
+  margin-top: 150px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(images/3.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.eighth-container .features h1 {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin-top: 89px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  background-color: var(--color-1);
+  font-size: var(--font-size-btn);
+  font-weight: 500;
+  margin: 10px;
+  /* padding: 10px; */
+  border-radius: 10px;
+  /* gap: 20px; */
+}
+.btns button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: var(--font-size-btn);
+  font-weight: 500;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  /* color: yellow; */
+  /* margin-left: 30px; */
+  
+  /* gap: 20px; */
+}
+
+.eighth-container .btn {
+  color: #ff5f6d;
+  height: 50px;
+  width: 190px;
+  /* background-color: aquamarine; */
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  /* justify-content: ;   */
+  /* margin-left: 10px; */
+
+  /* border-radius: 10px ; */
+}
+.btn button {
+  row-gap: 10px;
+}
