@@ -1,11 +1,27 @@
 :root {
   --color-1: #ff5f6d;
   --font-size-btn: 20px;
-  --font-size-heading: 60px;
+  --font-size-heading: 50px;
   --font-size-para: 14px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.col{
+  width: 100%;
+}
+.col5{
+  width: 50%;
 }
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 
 .main {
@@ -36,7 +52,7 @@ body {
 .logo {
   height: 10vh;
   width: 100vw;
-  margin-left: 120px;
+  margin-left: 50px;
 }
 .logo img {
   height: 70%;
@@ -80,8 +96,8 @@ body {
   border-radius: 5px;
   height: 30px;
   width: 90px;
-  /* margin-left: 10px; */
-  margin-right: 150px;
+  margin-left: 50px;
+  /* margin-right: 150px; */
 }
 #btn:hover {
   background-color: var(--color-1);
@@ -102,18 +118,56 @@ body {
 /* desiging of the 1st container starts from here */
 
 .first-container {
-  width: 100vw;
+  /* width: 100vw; */
   height: 89vh;
   object-fit: cover;
   overflow: hidden;
   background-image: url(images/9.png);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.first-container-text {
+  width: 1000px;
+  margin-right: 120px; 
+  /* font-size: var(--; */
+}
+.first-container-text h1 {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: white;
+  overflow: hidden;
+}
+.first-container-text p {
+  font-size: var(--font-size-para);
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.first-container-text button {
+  border: 1px solid white;
+  /* padding: 3px 2px; */
+  border-radius: 5px;
+  height: 50px;
+  width: 190px;
+  margin-left: 10px;
+  background-color: var(--color-1);
+  color: white;
+  font-size: var(--font-size-btn);
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
 }
 .img-first-container img {
-  margin-left: 120px;
-  width: 910px;
-  height: 970px;
+  width: 100%;
+  margin-top: 120px;
+
+  /* margin-left: 120px; */
+  width: 100%;
+  height: 100%;
 }
 .text h1 {
   font-size: var(--font-size-heading);
@@ -149,11 +203,16 @@ body {
 /* desiging of second conntainer starts from here */
 
 .second-container {
-  width: 100vw;
-  height: 90;
+  width: 80vw;
+  background-color: #f3f3f3;
+  /* height: 90; */
+
   object-fit: cover;
   overflow: hidden;
   display: flex;
+  /* align-items: end;
+   */
+  margin-left: 120px;
   justify-content: center;
   column-count: 3;
 }
@@ -199,8 +258,9 @@ body {
   justify-content: center;
   background-color: #f5f5f5;
 }
+
 .text {
-  width: 700px;
+  width: 1700px;
 }
 .text {
   width: 550px;
@@ -330,7 +390,7 @@ body {
 
 .eighth-container .features {
   margin-top: 150px;
-  height: 40vh;
+  height: 60vh;
   width: 100vw;
   background-image: url(images/3.png);
   overflow: hidden;
@@ -514,9 +574,11 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-around;
-  width: 1600px;
-  margin: 130px;
+  align-items: center;
+  /* background-color: yellow;  */
+  justify-content: space-evenly;
+  width: 1000px;
+  /* margin: 130px; */
 }
 
 .images {
@@ -534,13 +596,21 @@ body {
 }
 
 .thirteen-container {
-  background-color: var(--color-1);
-  /* height: 50vh; */
+  /* background-color: yellow; */
+  /* height: 100vh; */
   width: 100vw;
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-image: url(images/2.png);
   background-repeat: no-repeat;
+}
+.thirteen-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  /* margin-left: 200px; */
 }
 
 .email {
@@ -578,21 +648,22 @@ body {
   flex-direction: row;
   justify-content: center;
 
-  column-gap: 80px;
+  column-gap: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 100px;
   margin-top: 20px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .icons i {
   background-color: white; /* Set background color to white */
   color: black; /* Set icon color to black */
-  font-size: 24px; /* Adjust icon size as needed */
+  font-size: 15px; /* Adjust icon size as needed */
   margin: 5px; /* Adjust icon spacing as needed */
   padding: 10px; /* Adjust icon padding as needed */
   border-radius: 50%; /* Make icons circular if needed */
 }
+
 .center {
   display: flex;
   justify-content: center;
@@ -600,13 +671,13 @@ body {
   margin-top: 20px;
   margin-left: 20px;
   color: white;
-  font-size: 30px;
+  font-size: 10px;
 }
 .fourteen-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   background-color: #f0f0f0;
   background-image: url(images/6.png);
@@ -632,17 +703,32 @@ body {
   background-color: #f5f5f5;
   box-sizing: border-box;
   /* background-color: #ff5f6d; */
-  
 }
 .input {
+  /* margin-top: 120px; */
   margin-left: 20px;
   padding: 10px;
   border-radius: 10px;
   border: none;
   width: 300px;
-  height: 40px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* gap: 200px;  */
+}
+.input img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 200px;
+}
+.input form {
+  margin-top: 90px;
 }
 .input input {
+  /* margin-top: 120px; */
   padding: 10px;
   border-radius: 10px;
   border: none;
@@ -666,3 +752,60 @@ body {
   background-color: white;
   color: var(--color-1);
 }
+
+
+
+/* 
+.text-content{
+  position: absolute;
+  z-index: 10;
+  bottom: -100%;
+  background-color: rgba(255, 255, 255, 0.705);
+  transition: all 0.5s ease;
+}
+#card:hover .text-content{
+  bottom: 0;
+} */
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-content {
+  position: absolute;
+  z-index: 10;
+  bottom: -100%;
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 100%; /* Ensure full width */
+  padding: 10px; /* Adjust padding as needed */
+  display: none; /* Initially hide the text container */
+  transition: bottom 0.5s ease, opacity 0.5s ease; /* Add transition property */
+  opacity: 0; /* Initially hide the text with transparency */
+}
+
+.image-container:hover .text-content {
+  bottom: 0;
+  display: flex ;
+  justify-content: center;
+  opacity: 1; /* Show the text with full opacity when image is hovered */
+  display: block; /* Display the text container when image is hovered */
+}
+
+
+/* responsiveness */
+
+@media only screen and (max-width: 480px){
+.row{
+  flex-direction: column-reverse;
+  margin-top: 60px;
+   
+}
+.col{
+  width: 100%;
+}
+}
+
+
+
+
